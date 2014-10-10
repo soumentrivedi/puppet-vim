@@ -1,3 +1,0 @@
-# vim #
-
-This is the vim module. It provides...
