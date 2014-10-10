@@ -69,7 +69,7 @@ class vim (
     content => $vimrc_content,
   }
 
-  file { "etc/skel/.vimrc":
+  file { "/etc/skel/.vimrc":
     owner   => "root",
     content => $vimrc_content,
   }
@@ -82,7 +82,7 @@ class vim (
     "/etc/skel/.vim/autoload",
     "/etc/skel/.vim/bundle"] -> Wget::Fetch["DownloadPathogen_${user}", "DownloadPathogen_skel"] -> File[
     "${home_dir}/.vim/autoload/pathogen.vim",
-    "/etc/skel/.vim/autoload/pathogen.vim"] -> File["${home_dir}/.vimrc", "etc/skel/.vimrc"]
+    "/etc/skel/.vim/autoload/pathogen.vim"] -> File["${home_dir}/.vimrc", "/etc/skel/.vimrc"]
 
   create_resources("::vim::plugin", $plugin_source)
 }
