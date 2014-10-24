@@ -11,10 +11,10 @@
     }
   ],
   "license": "",
-  "name": "soumentrivedi/puppet-vim",
+  "name": "iaac/vim",
   "operatingsystem_support": [],
   "requirements": [],
-  "source": "",
+  "source": "http://stash.ordsvy.gov.uk/projects/IN/repos/vim",
   "summary": "Install VIM and plugins via pathogen",
   "description": "Install VIM and plugins via pathogen",
   "tags": [],
